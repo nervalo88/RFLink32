@@ -225,7 +225,7 @@ using namespace RFLink::Radio;
 #endif
 
 #define KAKU_PLUGIN_ID 003
-#define PLUGIN_DESC_003 "Kaku / AB400D / Impuls / PT2262 / Sartano / Tristate"
+
 #define KAKU_CodeLength 12                        // number of data bits
 #define KAKU_R_D 300       //360 // 300          // 370? 350 us
 #define KAKU_PULSEMID_D 600 // (17)  510 = KAKU_R*2 not sufficient!

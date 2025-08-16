@@ -16,7 +16,7 @@
 #define REVNR 0x01   // 0X42       // shown in version and startup string
 
 #ifndef RFLINK_BUILDNAME
-#define RFLINK_BUILDNAME "unknown"
+#define RFLINK_BUILDNAME "Reno25summer"
 #endif
 
 #ifndef DEFAULT_WIFI_CLIENT_HOSTNAME
