@@ -286,7 +286,7 @@ void reconnect(int retryCount, bool force)
 
     if(params::lwt_enabled) {
       #ifdef ESP32
-      connectOK = MQTTClient.connect(params::id.c_str(), params::user.c_str(), params::password.c_str(), (params::topic_lwt).c_str(), 2, true, PSTR("Offline"));
+      connectOK = MQTTClient.connect(params::id.c_str(), params::user.c_str(), params::password.c_str(), (params::topic_lwt).c_str(), 2, true, PSTR("RFLink32 Offline"));
       #elif defined(ESP8266)
       connectOK = MQTTClient.connect(params::id.c_str(), params::user.c_str(), params::password.c_str(), (params::topic_lwt).c_str(), 2, true, "Offline");
       #endif // ESP
@@ -304,7 +304,7 @@ void reconnect(int retryCount, bool force)
       Serial.println(params::user.c_str());
       if(params::lwt_enabled) {
         #ifdef ESP32
-              MQTTClient.publish((params::topic_lwt).c_str(), PSTR("Online"), true);
+              MQTTClient.publish((params::topic_lwt).c_str(), PSTR("RFLink32 Online"), true);
         #elif ESP8266
               MQTTClient.publish((params::topic_lwt).c_str(), "Online", true);
         #endif // ESP
